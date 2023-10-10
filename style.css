@@ -1,0 +1,109 @@
+
+body{
+    background-image: url('./image/winter_bg3.jpg') ;
+    background-size:cover;
+}
+
+
+body > .box-grid{
+    display: grid;
+    grid-template-columns: 12.5% 75% 12.5%;
+    grid-template-rows: 10% auto 60% 10%;
+}
+main{
+    grid-column: 3/2;
+}
+footer{
+    grid-column: 1/4;
+}
+
+
+.bild_ett > img{
+    height: 70px;
+    width: auto;
+}
+.bild_två > img{
+    height: 70px;
+    width: auto;
+}
+.bild_ett{
+    text-align: left;
+}
+.bild_två{
+    text-align: right;
+}
+
+
+nav{
+    margin: auto;
+    padding-right: 150px;
+    padding-bottom: 20px;
+    border: 3px solid rgb(247, 247, 11);
+    background-color: gray;
+}
+.l1{
+    color: salmon;
+    background-color: white;
+}
+.l2{
+    background-color: rgb(189, 189, 15);
+}
+
+
+header{
+    border: 3px solid salmon;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: antiquewhite;
+    background-color: gray;
+}
+
+
+main> .Dagar, main >.datum{
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(7, 100px);
+    text-align: center;
+    grid-auto-flow: dense;
+    gap: 4px;
+}
+
+.dtm, .mrk{
+    border: 3px solid salmon;
+    background-color: antiquewhite;
+}
+.dgr{
+    border: 1px solid salmon;
+    background-color: gray;
+}
+
+.mrk{ 
+    color: salmon;
+}
+
+main{
+    border: 2px solid black;
+    margin: auto;
+    background-color: antiquewhite;
+}
+main > .datum{
+    font-size: 70px;
+    border: 5px solid salmon;
+    background-color: salmon;
+}
+main > .Dagar{
+    padding: 4px;
+    font-size: 30px;
+    border: 3px solid salmon;
+    background-color: salmon; 
+}
+
+
+footer{
+    text-align: center;
+    margin-top: 30px;
+}
